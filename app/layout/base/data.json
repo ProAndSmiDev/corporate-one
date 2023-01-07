@@ -1,0 +1,57 @@
+{
+  "templateSettings": {
+    "meta": {
+      "http-equiv": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Language": "en",
+        "Cache-Control": "no-cache",
+        "expires": "0"
+      },
+      "name": {
+        "viewport": "width=device-width",
+        "document-state": "dynamic",
+        "robots": "index, follow",
+        "application-name": {
+          "ru": "Мое приложение",
+          "en": "My application"
+        },
+        "author": "AndSmi",
+        "copyright": "Company.com",
+        "reply-to": "developer@andsmi.ru",
+        "google": {
+          "value": "notranslate",
+          "content": "nositelinkssearchbox"
+        },
+        "telegram:channel": "@telegram"
+      }
+    },
+    "link": {
+      "rel": {
+        "stylesheet": "styles.min.css",
+        "canonical": "http://domain.com",
+        "alternate": {
+          "hreflang": {
+            "ru": "http://ru.domain.com",
+            "en": "http://en.domain.com"
+          }
+        }
+      }
+    },
+    "base": "/",
+    "lang": "en",
+    "scripts": [
+      {
+        "type": "module",
+        "name": "libs"
+      },
+      {
+        "type": "application/javascript",
+        "name": "app"
+      }
+    ]
+  },
+  "modal": {
+    "title": "Close modal",
+    "ariaLabel": "Close modal"
+  }
+}

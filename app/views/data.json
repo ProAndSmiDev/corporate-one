@@ -1,0 +1,12 @@
+{
+  "pages": {
+    "home": {
+      "meta": {
+        "description": "Тестовое описание для продвижения сайта",
+        "keywords": "Тестовые, слова, для, продвижения, сайта"
+      },
+      "title": "«Тестовый сайт» - Главная",
+      "header": "HELLO BOILERPLATE FOR HTML&CSS&JS!"
+    }
+  }
+}
