@@ -1,6 +1,6 @@
 {
-  "name": "pet-project",
-  "version": "2.0.0",
+  "name": "corporate",
+  "version": "1.0.0",
   "private": true,
   "description": "boilerplate for html&css&js projects",
   "main": "gulpfile.js",
@@ -19,7 +19,7 @@
     "yarn": "^1.22.18"
   },
   "type": "module",
-  "url": "https://github.com/proandsmidev/project-name/",
+  "url": "https://proandsmidev.github.io/corporate-one/",
   "devDependencies": {
     "@babel/core": "latest",
     "@babel/preset-env": "latest",
