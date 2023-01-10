@@ -1,5 +1,11 @@
 extends ../layout/base/layout
 
+include ../components/News/template
+include ../components/Clients/template
+include ../components/Counters/template
+include ../components/Advantages/template
+include ../components/FirstScreen/template
+
 block metaSeo
   title= pages.home.title
 
@@ -8,4 +14,9 @@ block metaSeo
 
 block content
   .home
-    h1= pages.home.header
+    +FirstScreen
+    +Advantages
+    +Counters
+    +Clients
+    +CTA
+    +News

@@ -1,0 +1,21 @@
+mixin FirstScreen(parent)
+  - parent = parent ? parent : 'home';
+
+  section.first-screen(class=`${parent}__first-screen`)
+    .first-screen__wrapper.u-wrapper
+      h1.first-screen-title
+        span.first-screen-title__text= firstScreen.title
+
+      .swiper.first-screen-slider.first-screen__slider
+        ul.swiper-wrapper.first-screen-slider-list
+          for item in firstScreen.slider.slides
+            li.swiper-slide.first-screen-slider-list__item
+              p.first-screen-slider-list-info.first-screen-slider-list__info
+                span.first-screen-slider-list-info__text= item.info
+
+        if firstScreen.slider.hasButtons
+          for button in firstScreen.slider.buttonsInfo
+            button(type="button" aria-label=button.label title=button.title class=`swiper-button-${button.type} first-screen-slider__btn--is-${button.type}`).first-screen-slider__btn
+
+      a.first-screen-link.first-screen__link(href=firstScreen.link.url title=firstScreen.link.title)
+        span.first-screen-link__text= firstScreen.link.text

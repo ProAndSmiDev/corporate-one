@@ -3,7 +3,7 @@
     "meta": {
       "http-equiv": {
         "Content-Type": "text/html; charset=utf-8",
-        "Content-Language": "en",
+        "Content-Language": "ru",
         "Cache-Control": "no-cache",
         "expires": "0"
       },
@@ -16,7 +16,7 @@
           "en": "My application"
         },
         "author": "AndSmi",
-        "copyright": "Company.com",
+        "copyright": "THEMEPROF",
         "reply-to": "developer@andsmi.ru",
         "google": {
           "value": "notranslate",
@@ -28,17 +28,17 @@
     "link": {
       "rel": {
         "stylesheet": "styles.min.css",
-        "canonical": "http://domain.com",
+        "canonical": "http://corporate.com",
         "alternate": {
           "hreflang": {
-            "ru": "http://ru.domain.com",
-            "en": "http://en.domain.com"
+            "ru": "http://ru.corporate.com",
+            "en": "http://en.corporate.com"
           }
         }
       }
     },
     "base": "/",
-    "lang": "en",
+    "lang": "ru",
     "scripts": [
       {
         "type": "module",

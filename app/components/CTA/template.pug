@@ -1,0 +1,8 @@
+mixin CTA(parent)
+  - parent = (parent) ? parent : 'home';
+
+  .cta(class=`${parent}__cta`)
+    .cta__wrapper.u-wrapper
+      h2.cta-title.cta__title
+        span.cta-title__text= cta.title
+      +Button('cta', 'secondary', 'md')= cta.buttonText

@@ -1,1 +1,29 @@
-.home {}
+.home {
+  &__first-screen {
+    height: em(600, $fz);
+  }
+
+  &__cta {
+    width: 100%;
+    height: em(160, $fz);
+  }
+
+  &__counters {
+    margin-top: em(65, $fz);
+    
+    @media(max-width: $md) {
+      margin-top: em(25, $fz);
+    }
+  }
+
+  &__advantages,
+  &__clients,
+  &__cta,
+  &__news {
+    margin-top: em(80, $fz);
+    
+    @media(max-width: $pc) {
+      margin-top: em(30, $fz);
+    }
+  }
+}

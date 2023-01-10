@@ -1,0 +1,44 @@
+{
+  "news": {
+    "title": "Последние новости",
+    "items": [
+      {
+        "title": "Веб интерактив",
+        "createdBy": "28.05.2019",
+        "pic": {
+          "name": "web-interactive",
+          "alt": "Активная работа в команде"
+        },
+        "promo": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+        "text": [],
+        "urlPath": "web-interactive"
+      },
+      {
+        "title": "Бизнес и работа",
+        "createdBy": "12.05.2019",
+        "pic": {
+          "name": "business-and-work",
+          "alt": "Рабочее место для бизнеса"
+        },
+        "promo": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, minus modi molestias mollitia nam nemo tempora tempore!",
+        "text": [],
+        "urlPath": "business-and-work"
+      },
+      {
+        "title": "Награды за успехи",
+        "createdBy": "8.05.2019",
+        "pic": {
+          "name": "awards-for-success",
+          "alt": "Команда, награжденная за успехи"
+        },
+        "promo": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
+        "text": [],
+        "urlPath": "awards-for-success"
+      }
+    ],
+    "url": {
+      "text": "Больше новостей",
+      "link": "/news"
+    }
+  }
+}

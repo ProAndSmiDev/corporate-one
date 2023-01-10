@@ -1,0 +1,11 @@
+mixin CountersList(parent, content)
+  - parent = parent ? parent : 'counters';
+
+  ul.counters-list(class=`${parent}__list`)
+    for item in content
+      li.counters-list__item
+        p.counters-list-number.counters-list__number
+          span.counters-list-number__text
+            span.counters-list-number__text--is-count= item.count
+            br
+            | #{item.title}

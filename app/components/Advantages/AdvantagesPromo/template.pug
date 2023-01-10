@@ -1,0 +1,12 @@
+mixin AdvantagesPromo(parent, content)
+  - parent = parent ? parent : 'advantages';
+
+  .advantages-promo(class=`${parent}__promo`)
+    h2.advantages-promo-title
+      span.advantages-promo-title__text!= content.title
+
+    p.advantages-promo-info.advantages-promo__info
+      span.advantages-promo-info__text= content.info
+
+    a.advantages-promo-link.advantages-promo__link(href=content.link.url title=content.link.title)
+      span.advantages-promo-link__text= content.link.text

@@ -1,4 +1,4 @@
-import { path } from './config/paths.mjs';
+import { paths } from './config/paths.mjs';
 import browserSync from 'browser-sync';
 import {
   src,
@@ -19,23 +19,20 @@ const isProd = (process.env.NODE_ENV === 'prod');
 global.app = {
   src,
   dest,
-  task,
   sync,
   uglJS,
   isProd,
-  series,
   imgMin,
   rename,
-  parallel,
   pngQuant,
-  dev: path.dev,
-  watcher: watch,
-  build: path.build,
-  watch: path.watch,
-  clean: path.clean,
-  allFolders: path.allFolders,
-  rootFolder: path.rootFolder,
-  buildFolder: path.buildFolder,
+  dev: paths.dev,
+  build: paths.build,
+  watch: paths.watch,
+  clean: paths.clean,
+  devFolder: paths.devFolder,
+  allFolders: paths.allFolders,
+  rootFolder: paths.rootFolder,
+  buildFolder: paths.buildFolder,
 };
 
 /* Таски для работы с файлами */
@@ -83,27 +80,27 @@ const watchFiles = () => {
     notify: false,
   });
 
-  app.watcher(app.watch.fonts, app.parallel([getWoffFonts, getWoff2Fonts]));
-  app.watcher(app.watch.svg, getSVGSprite);
-  app.watcher(app.watch.img, getOptimizedImages);
-  app.watcher(app.watch.webp, getWEBPImages);
-  app.watcher(app.watch.scripts, getJS);
-  app.watcher(app.watch.libs, getLibs);
-  app.watcher(app.watch.scss, getStyles);
-  app.watcher(app.watch.data, getData);
-  app.watcher(app.watch.pug, getHTML);
+  watch(app.watch.fonts, parallel([getWoffFonts, getWoff2Fonts]));
+  watch(app.watch.svg, getSVGSprite);
+  watch(app.watch.img, getOptimizedImages);
+  watch(app.watch.webp, getWEBPImages);
+  watch(app.watch.scripts, getJS);
+  watch(app.watch.libs, getLibs);
+  watch(app.watch.scss, getStyles);
+  watch(app.watch.data, getData);
+  watch(app.watch.pug, getHTML);
 };
 
-const getAssets = app.series([
-  app.parallel(getWoffFonts, getWoff2Fonts),
-  app.parallel(getSVGSprite, getWEBPImages, getOptimizedImages),
-  app.parallel(getLibs, getJS, getStyles),
-  app.series(getData, getHTML),
+const getAssets = series([
+  parallel(getWoffFonts, getWoff2Fonts),
+  parallel(getSVGSprite, getWEBPImages, getOptimizedImages),
+  parallel(getLibs, getJS, getStyles),
+  series(getData, getHTML),
 ]);
 
-const build = app.series([cleanDir, getAssets]);
-const buildWithWatcher = app.series([build, watchFiles]);
-const zipFiles = app.series([build, getZippedProject]);
+const build = series([cleanDir, getAssets]);
+const buildWithWatcher = series([build, watchFiles]);
+const zipFiles = series([build, getZippedProject]);
 /* Таски всего проекта */
 
 /* Итоговые таски для работы */
@@ -111,3 +108,4 @@ task('build', buildWithWatcher);
 task('zip', zipFiles);
 task('default', watchFiles);
 /* Итоговые таски для работы */
+
