@@ -4,12 +4,4 @@ node_modules
 yarn.lock
 yarn-error.log
 *.zip
-app
-config
-dev
-tmpl
-.editorconfig
-.eslintrc.json
-.stylelintrc.cjs
-gulpfile.js
-package.json
+app/assets/data.json
