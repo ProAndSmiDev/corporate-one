@@ -20,7 +20,7 @@ mixin getLink(rel, content)
     link(rel=rel href=content)
 
 mixin getScripts(fileName, type)
-  script(src=`js/${fileName}.min.js` type=type)
+  script(src=`/js/${fileName}.min.js` type=type)
 
 mixin Modal(type)
   .modal(class=`${(type) ? 'modal-' + type + ' modal__' + type : ''}`)

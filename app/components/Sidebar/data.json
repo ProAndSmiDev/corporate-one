@@ -11,7 +11,7 @@
     {
       "icon" : "geo",
       "url" : {
-        "link" : "contacts",
+        "link" : "/contacts",
         "title" : "Открыть страницу с контактами"
       }
     },
@@ -26,7 +26,7 @@
     {
       "icon": "people",
       "url": {
-        "link": "our-team",
+        "link": "/our-team",
         "title": "Открыть страницу с нашей командой"
       }
     }
