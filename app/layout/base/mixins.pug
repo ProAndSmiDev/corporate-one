@@ -15,7 +15,7 @@ mixin getLink(rel, content)
     for domain, lang in content.hreflang
       link(rel=rel hreflang=lang href=domain)
   else if rel === 'stylesheet'
-    link(rel=rel href=`css/${content}`)
+    link(rel=rel href=`/css/${content}`)
   else if rel === 'canonical'
     link(rel=rel href=content)
 
