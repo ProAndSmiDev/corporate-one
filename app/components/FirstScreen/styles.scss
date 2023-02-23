@@ -2,10 +2,10 @@
   display: flex;
   padding-top: em(70, $fz);
   padding-bottom: em(70, $fz);
-  background-image: url("/img/first-screen-bg.jpg");
+  background-image: url("../img/first-screen-bg.jpg");
   background-position: center;
   background-size: cover;
-  
+
   @media(max-width: $md) {
     padding-top: em(25, $fz);
     padding-bottom: em(25, $fz);

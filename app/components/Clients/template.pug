@@ -10,5 +10,5 @@ mixin Clients(parent)
         for client in clients.items
           li.clients-list__item
             picture.clients-pic.clients-list__pic
-              source(srcset=`/img/clients/${client.pic.name}.webp` type='image/webp')
-              img.clients-pic__logo(src=`/img/clients/${client.pic.alt}` alt=client.pic.alt)
+              source(srcset=`img/clients/${client.pic.name}.webp` type='image/webp')
+              img.clients-pic__logo(src=`img/clients/${client.pic.alt}` alt=client.pic.alt)

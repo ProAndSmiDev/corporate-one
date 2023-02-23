@@ -7,8 +7,8 @@
       font-style: italic;
     }
     font-weight: $fontWeight;
-    src: url("/fonts/#{$fontName}/#{$fileName}.woff2") format("woff2"),
-      url("/fonts/#{$fontName}/#{$fileName}.ttf") format("truetype");
+    src: url("../fonts/#{$fontName}/#{$fileName}.woff2") format("woff2"),
+      url("../fonts/#{$fontName}/#{$fileName}.ttf") format("truetype");
   }
 }
 @mixin setTruncate {

@@ -1,10 +1,10 @@
 .counters {
   padding-top: em(65, $fz);
   padding-bottom: em(65, $fz);
-  background: transparent url("/img/counters-bg.jpg") fixed center/cover no-repeat;
+  background: transparent url("../img/counters-bg.jpg") fixed center/cover no-repeat;
 
   @media(max-width: $pc) {
-    background-image: url("/img/counters-bg-mobi.jpg");
+    background-image: url("../img/counters-bg-mobi.jpg");
   }
 
   &__wrapper {

@@ -1,10 +1,10 @@
 .cta {
-  background-image: url("/img/cta-bg.jpg");
+  background-image: url("../img/cta-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media(max-width: $pc) {
-    background-image: url("/img/cta-bg-mobi.jpg");
+    background-image: url("../img/cta-bg-mobi.jpg");
   }
   @media(max-width: $md) {
     background-position: em(-140, $fz) 100%;

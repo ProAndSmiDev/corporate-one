@@ -15,12 +15,12 @@ mixin getLink(rel, content)
     for domain, lang in content.hreflang
       link(rel=rel hreflang=lang href=domain)
   else if rel === 'stylesheet'
-    link(rel=rel href=`/css/${content}`)
+    link(rel=rel href=`css/${content}`)
   else if rel === 'canonical'
     link(rel=rel href=content)
 
 mixin getScripts(fileName, type)
-  script(src=`/js/${fileName}.min.js` type=type)
+  script(src=`js/${fileName}.min.js` type=type)
 
 mixin Modal(type)
   .modal(class=`${(type) ? 'modal-' + type + ' modal__' + type : ''}`)
