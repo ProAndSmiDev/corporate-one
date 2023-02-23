@@ -5,7 +5,7 @@ mixin AdvantagesList(parent, content)
     for item in content
       li.advantages-list__item
         svg.advantages-list__icon(class=`advantages-list__icon--is-${item.icon}`)
-          use(href=`/img/sprite.svg#${item.icon}`)
+          use(href=`img/sprite.svg#${item.icon}`)
 
         .advantages-list__wrapper
           h2.advantages-list-title
