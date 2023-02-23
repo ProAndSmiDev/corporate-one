@@ -396,7 +396,7 @@
 				}
 			}
 		},
-		"base": "/",
+		"base": "https://proandsmidev.github.io/corporate-one/",
 		"lang": "ru",
 		"scripts": [
 			{
