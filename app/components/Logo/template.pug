@@ -1,7 +1,0 @@
-mixin Logo(parent)
-  - parent = (parent) ? parent : 'page';
-
-  a.logo(class=`${parent}__logo` href=logo.url title=logo.urlTitle)
-    picture.logo__pic
-      source(srcset=`img/${logo.picName}.webp` type='image/webp')
-      img.logo__img(src=`img/${logo.picName}.png` alt=logo.picAlt)

@@ -1,8 +1,0 @@
-mixin Subscribe(parent)
-  - parent = (parent) ? parent : 'page';
-
-  .subscribe(class=`${parent}__subscribe`)
-    h2.subscribe-title.subscribe__title= subscribe.title
-    form.subscribe-form.subscribe__form(method='post' action='')
-      input.subscribe-form__field(type="email" name="userName" placeholder=subscribe.placeholder)
-      +Button('subscribe-form', 'accent', 'md', 'submit')= subscribe.btnText

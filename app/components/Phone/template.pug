@@ -1,7 +1,0 @@
-mixin Phone(parent)
-  - parent = (parent) ? parent : 'page';
-
-  a.phone(class=`${parent}__phone` href=`tel:${phone.numberLink}` title=phone.title)
-    svg.phone__icon
-      use(href='img/sprite.svg#phone')
-    span.phone__text= phone.numberText

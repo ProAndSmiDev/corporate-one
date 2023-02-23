@@ -1,9 +1,0 @@
-mixin Address(parent)
-  - parent = (parent) ? parent : 'page';
-
-  address.address(class=`${parent}__address`)
-    for linkItem in address
-      a.address__link(href=`${(linkItem.type ? `${linkItem.type}:` : '')}${linkItem.url}` title=linkItem.urlTitle target="_blank")
-        svg.address__icon(class=`address__icon--is-${linkItem.urlIcon}`)
-          use(href=`img/sprite.svg#${linkItem.urlIcon}`)
-        span.address__text= linkItem.urlText
