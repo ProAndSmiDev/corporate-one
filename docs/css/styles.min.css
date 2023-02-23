@@ -3303,28 +3303,28 @@ svg.leaflet-image-layer.leaflet-interactive path {
   font-family: "Gilroy";
   font-display: swap;
   font-weight: 300;
-  src: url("/fonts/Gilroy/Gilroy-Light.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-Light.ttf") format("truetype");
+  src: url("../fonts/Gilroy/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy/Gilroy-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
   font-weight: 400;
-  src: url("/fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+  src: url("../fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
   font-weight: 500;
-  src: url("/fonts/Gilroy/Gilroy-Medium.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
+  src: url("../fonts/Gilroy/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
   font-weight: 700;
-  src: url("/fonts/Gilroy/Gilroy-Bold.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  src: url("../fonts/Gilroy/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
 }
 
 * {
@@ -3616,7 +3616,7 @@ footer {
 }
 
 .cta {
-  background-image: url("/img/cta-bg.jpg");
+  background-image: url("../img/cta-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -4297,7 +4297,7 @@ footer {
 .counters {
   padding-top: 4.0625em;
   padding-bottom: 4.0625em;
-  background: transparent url("/img/counters-bg.jpg") fixed center/cover no-repeat;
+  background: transparent url("../img/counters-bg.jpg") fixed center/cover no-repeat;
 }
 
 .counters__wrapper {
@@ -4437,7 +4437,7 @@ footer {
   display: flex;
   padding-top: 4.375em;
   padding-bottom: 4.375em;
-  background-image: url("/img/first-screen-bg.jpg");
+  background-image: url("../img/first-screen-bg.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -4860,7 +4860,7 @@ footer {
   }
 
   .cta {
-    background-image: url("/img/cta-bg-mobi.jpg");
+    background-image: url("../img/cta-bg-mobi.jpg");
   }
 
   .cta-title__text {
@@ -5095,7 +5095,7 @@ footer {
   }
 
   .counters {
-    background-image: url("/img/counters-bg-mobi.jpg");
+    background-image: url("../img/counters-bg-mobi.jpg");
   }
 
   .counters__info {
