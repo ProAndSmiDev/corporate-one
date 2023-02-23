@@ -1,0 +1,10 @@
+extends ../layout/base/layout
+
+block metaSeo
+  title= pages.services.title
+
+  for content, name in pages.services.meta
+    +getMeta('', name, content)
+
+block content
+  .services
