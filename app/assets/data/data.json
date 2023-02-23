@@ -197,23 +197,23 @@
 		{
 			"title": "Перейти на карту сайта",
 			"text": "Карта сайта",
-			"url": "/sitemap"
+			"url": "sitemap"
 		},
 		{
 			"title": "Перейти на правила",
 			"text": "Правила",
-			"url": "/terms"
+			"url": "terms"
 		},
 		{
 			"title": "Перейти на страницу «Наша команда»",
 			"text": "Наша команда",
-			"url": "/our-team"
+			"url": "our-team"
 		}
 	],
 	"logo": {
 		"picName": "logo",
 		"picAlt": "Логотип корпоративного сайта",
-		"url": "/",
+		"url": "",
 		"urlTitle": "Перейти на главную"
 	},
 	"menu": {
@@ -221,27 +221,27 @@
 		"items": [
 			{
 				"title": "Главная",
-				"url": "/",
+				"url": "",
 				"urlTitle": "Перейти на страницу «Главная»"
 			},
 			{
 				"title": "Услуги",
-				"url": "/services",
+				"url": "services",
 				"urlTitle": "Перейти на страницу «Услуги»"
 			},
 			{
 				"title": "О компании",
-				"url": "/about",
+				"url": "about",
 				"urlTitle": "Перейти на страницу «О компании»"
 			},
 			{
 				"title": "Новости",
-				"url": "/news",
+				"url": "news",
 				"urlTitle": "Перейти на страницу «Новости»"
 			},
 			{
 				"title": "Контакты",
-				"url": "/contacts",
+				"url": "contacts",
 				"urlTitle": "Перейти на страницу «Контакты»"
 			}
 		]
@@ -286,7 +286,7 @@
 		],
 		"url": {
 			"text": "Больше новостей",
-			"link": "/news"
+			"link": "news"
 		}
 	},
 	"phone": {
@@ -307,7 +307,7 @@
 		{
 			"icon": "geo",
 			"url": {
-				"link": "/contacts",
+				"link": "contacts",
 				"title": "Открыть страницу с контактами"
 			}
 		},
@@ -322,7 +322,7 @@
 		{
 			"icon": "people",
 			"url": {
-				"link": "/our-team",
+				"link": "our-team",
 				"title": "Открыть страницу с нашей командой"
 			}
 		}
@@ -396,7 +396,6 @@
 				}
 			}
 		},
-		"base": "https://proandsmidev.github.io/corporate-one/",
 		"lang": "ru",
 		"scripts": [
 			{

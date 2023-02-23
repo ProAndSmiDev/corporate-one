@@ -5,8 +5,8 @@ mixin Card(parent, content, type)
 
   article.card(class=`${parent}__card`)
     picture.card__pic
-      source(srcset=`/img/${type}/promo/${content.pic.name}.webp` type='image/webp')
-      img.card__img(src=`/img/${type}/promo/${content.pic.name}.jpg` alt=content.pic.alt)
+      source(srcset=`img/${type}/promo/${content.pic.name}.webp` type='image/webp')
+      img.card__img(src=`img/${type}/promo/${content.pic.name}.jpg` alt=content.pic.alt)
 
     .card__wrapper
       header.card__header
