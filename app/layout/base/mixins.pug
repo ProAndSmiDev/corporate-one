@@ -16,7 +16,7 @@ mixin getLink(rel, content)
       link(rel=rel hreflang=lang href=domain)
   else if rel === 'stylesheet'
     link(rel=rel href=`/css/${content}`)
-  else
+  else if rel === 'canonical'
     link(rel=rel href=content)
 
 mixin getScripts(fileName, type)

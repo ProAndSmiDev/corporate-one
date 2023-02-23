@@ -1,0 +1,9 @@
+mixin Button(parent, theme, size, type)
+  - parent = (parent) ? parent : 'page';
+  - themeClass = (theme) ? `button--theme-${theme}` : '';
+  - sizeClass = (theme) ? `button--size-${size}` : '';
+  - typeByButton = (type) ? type : 'button';
+
+  button.button(class=`${themeClass} ${sizeClass} ${parent}__button` type=typeByButton)
+    span.button__text
+      block

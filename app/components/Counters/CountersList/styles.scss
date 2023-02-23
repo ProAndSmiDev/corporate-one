@@ -1,0 +1,60 @@
+.counters-list {
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__item {
+    width: em(190, $fz);
+
+    @media(max-width: $pc) {
+      width: em(140, $fz);
+    }
+
+    &:nth-child(odd) {
+      margin-right: em(30, $fz);
+
+      @media(max-width: $pc) {
+        margin-right: em(15, $fz);
+      }
+    }
+
+    &:nth-child(n + 3) {
+      margin-top: em(30, $fz);
+
+      @media(max-width: $pc) {
+        margin-top: em(15, $fz);
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.counters-list-number {
+  text-align: center;
+
+  &__text {
+    $fz: 18;
+    color: $primary;
+    text-transform: uppercase;
+    font-size: em($fz, $fz_base);
+    font-weight: 300;
+
+    @media(max-width: $pc) {
+      $fz: 14;
+      font-size: em($fz, $fz_base);
+    }
+
+    &--is-count {
+      $fz: 60;
+      font-size: em($fz, 18);
+      font-weight: 700;
+
+      @media(max-width: $pc) {
+        $fz: 48;
+        font-size: em($fz, 14);
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "advantages" : {
+    "promo": {
+      "title": "Легкий путь создать свою <span class='advantages-promo-title__text--is-colored'>мечту</span>",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+      "link": {
+        "url": "#",
+        "title": "Перейти на страницу",
+        "text": "Узнать больше"
+      }
+    },
+    "previews": [
+      {
+        "title": "Веб интерактив",
+        "pic": {
+          "name": "web-interactive",
+          "alt": "Фото нашего интерактива"
+        },
+        "promo": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+      },
+      {
+        "title": "Награды за успехи",
+        "pic": {
+          "name": "awards-for-success",
+          "alt": "Фото наград за наши успехи"
+        },
+        "promo": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    ],
+    "list" : [
+      {
+        "title" : "Современный дизайн",
+        "icon" : "lamp",
+        "info" : "Nulla varius consequat magna, id  molestie ipsum volutpat quis. A true story, that never been told!."
+      },
+      {
+        "title" : "Быстрое представление",
+        "icon" : "rocket",
+        "info" : "Nulla varius consequat magna, id  molestie ipsum volutpat quis!"
+      },
+      {
+        "title" : "Легко настраиваемый",
+        "icon" : "gears",
+        "info" : "Nulla varius consequat magna, id  molestie ipsum volutpat quis! Id  molestie ipsum."
+      }
+    ]
+  }
+}

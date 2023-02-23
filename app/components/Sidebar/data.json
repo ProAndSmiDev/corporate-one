@@ -1,0 +1,34 @@
+{
+  "sidebar": [
+    {
+      "icon": "phone-wc",
+      "button": {
+        "title": "Открыть форму обратной связи",
+        "class": "js--open-modal-callback"
+      },
+      "isButton": true
+    },
+    {
+      "icon" : "geo",
+      "url" : {
+        "link" : "/contacts",
+        "title" : "Открыть страницу с контактами"
+      }
+    },
+    {
+      "icon": "msg",
+      "url": {
+        "link": "test@yandex.ru",
+        "title": "Связаться с нами по почте",
+        "type": "mailto"
+      }
+    },
+    {
+      "icon": "people",
+      "url": {
+        "link": "/our-team",
+        "title": "Открыть страницу с нашей командой"
+      }
+    }
+  ]
+}

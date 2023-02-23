@@ -6,7 +6,7 @@ const devFolder = './app/';
 const assetsFolder = `${devFolder}assets/`;
 const allFolders = ['**', '!**/*.+(zip|rar|7zip)/**', '!node_modules/**', '!.idea/**', '!.git/**'];
 
-export const path = {
+export const paths = {
   build: {
     scripts: `${buildFolder}js`,
     media: `${buildFolder}img`,

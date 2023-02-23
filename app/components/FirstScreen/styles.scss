@@ -1,0 +1,139 @@
+.first-screen {
+  display: flex;
+  padding-top: em(70, $fz);
+  padding-bottom: em(70, $fz);
+  background-image: url("/img/first-screen-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  
+  @media(max-width: $md) {
+    padding-top: em(25, $fz);
+    padding-bottom: em(25, $fz);
+  }
+
+  &__wrapper {
+    justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
+
+    @media(max-width: $pc) {
+      max-width: em(720, $fz);
+    }
+  }
+
+  &__slider {
+    width: 100%;
+    margin-top: em(40, $fz);
+  }
+
+  &__link {
+    margin-top: em(100, $fz);
+
+    @media(max-width: $pc) {
+      margin-top: em(45, $fz);
+    }
+  }
+}
+
+.first-screen-title {
+  @media(max-width: $pc) {
+    text-align: center;
+  }
+
+  &__text {
+    $fz: 48;
+    color: $primary;
+    font-size: em($fz, $fz_base);
+    font-weight: 500;
+
+    @media(max-width: $pc) {
+      $fz: 36;
+      font-size: em($fz, $fz_base);
+    }
+  }
+}
+
+.first-screen-slider {
+  &__btn {
+    --swiper-navigation-size: #{em(37, $fz)};
+    --swiper-theme-color: #{$primary};
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.35;
+    }
+  }
+}
+
+.first-screen-slider-list {
+  &__info {
+    max-width: em(730, $fz);
+    margin-right: auto;
+    margin-left: auto;
+
+    @media(max-width: $pc) {
+      max-width: em(595, $fz);
+    }
+    @media(max-width: $md) {
+      max-width: em(460, $fz);
+    }
+  }
+}
+
+.first-screen-slider-list-info {
+  @media(max-width: $pc) {
+    text-align: center;
+  }
+
+  &__text {
+    $fz: 18;
+    color: $primary;
+    font-size: em($fz, $fz_base);
+    font-weight: 300;
+    line-height: 1.8;
+
+    @media(max-width: $pc) {
+      $fz: 16;
+      font-size: em($fz, $fz_base);
+    }
+  }
+}
+
+.first-screen-link {
+  --first-screen-link-color: #{$primary};
+  position: relative;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+
+    content: "";
+    background-color: var(--first-screen-link-color);
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  &:hover {
+    --first-screen-link-color: #{transparentize($primary, 0.2)};
+
+    &::before {
+      transform: scaleX(0);
+    }
+  }
+
+  &__text {
+    $fz: 24;
+    color: var(--first-screen-link-color);
+    font-size: em($fz, $fz_base);
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+
+    @media(max-width: $pc) {
+      $fz: 18;
+      font-size: em($fz, $fz_base);
+    }
+  }
+}

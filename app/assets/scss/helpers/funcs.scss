@@ -35,7 +35,7 @@
 
     @if type-of($value) == "number" {
       $value: strip-units($value);
-      $result: append($result, $value / $size * 100vw, $separator);
+      $result: append($result, math.div($value, $size) * 100vw, $separator);
     }
 
     @else if type-of($value) == "list" {

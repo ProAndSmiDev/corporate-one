@@ -1,0 +1,6 @@
+mixin ArrowUp(parent)
+  - parent = parent ? parent : 'page';
+
+  button.arrow-up(class=`${parent}__arrow-up js--scroll-to-top`)
+    svg.arrow-up__icon
+      use(href='/img/sprite.svg#arrow-down')

@@ -1,4 +1,4 @@
-@mixin setFamily($fontName, $fileName, $fontWeight, $fontStyle: false) {
+@mixin setFamily($fontName: 'Arial', $fileName: 'Arial-Regular', $fontWeight: 400, $fontStyle: false) {
   @font-face {
     font-family: $fontName;
     font-display: swap;

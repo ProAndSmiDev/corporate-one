@@ -1,0 +1,28 @@
+.arrow-up {
+  --arrow-up-bg-color: #{darken($theme, 5%)};
+  --arrow-up-text-color: #{$primary};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: em(5, $fz);
+  background-color: var(--arrow-up-bg-color);
+  transition: background-color 0.3s ease-in-out;
+
+  &__icon {
+    width: em(37, $fz);
+    height: em(37, $fz);
+    color: var(--arrow-up-text-color);
+    transform: rotate(180deg);
+    transition: color 0.3s ease-in-out;
+
+    @media(max-width: $pc) {
+      width: em(25, $fz);
+      height: em(25, $fz);
+    }
+  }
+
+  &:hover {
+    --arrow-up-bg-color: #{darken($theme, 10%)};
+    --arrow-up-text-color: #{darken($primary, 10%)};
+  }
+}

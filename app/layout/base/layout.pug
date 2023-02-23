@@ -1,4 +1,5 @@
 include mixins
+include globals
 
 doctype html
 html(lang=templateSettings.lang)
@@ -14,13 +15,32 @@ html(lang=templateSettings.lang)
       +getLink(type, val)
   body
     .page
-      .page__wrapper
-        header.page__header
-        main.page__main
-          block content
-        footer.page__footer
+      +Sidebar
+      header.page__header
+        .page__wrapper.page__wrapper--is-header.u-wrapper
+          +Logo
+          +Menu('', 'header')
+          +Phone
+      main.page__main
+        block content
+      footer.footer.page__footer
+        .footer__upper
+          .footer__wrapper.footer__wrapper--is-upper-block.u-wrapper
+            .footer__col
+              +Logo('footer')
+              +Address('footer')
+              +Socials('footer', 'footer')
+            .footer__col
+              +Menu('footer', 'footer')
+            +Subscribe('footer')
+        .footer__lower
+          .footer__wrapper.footer__wrapper--is-lower-block.u-wrapper
+            +Copyright('footer')
+            +FooterMenu
 
-    include ../../components/ModalComponentName/template
+      +ArrowUp
+    if false
+      include ../../components/ModalComponentName/template
 
   for script in templateSettings.scripts
     +getScripts(script.name, script.type)
