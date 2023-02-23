@@ -9,6 +9,61 @@
 			"header": "HELLO BOILERPLATE FOR HTML&CSS&JS!"
 		}
 	},
+	"templateSettings": {
+		"meta": {
+			"http-equiv": {
+				"Content-Type": "text/html; charset=utf-8",
+				"Content-Language": "ru",
+				"Cache-Control": "no-cache",
+				"expires": "0"
+			},
+			"name": {
+				"viewport": "width=device-width",
+				"document-state": "dynamic",
+				"robots": "index, follow",
+				"application-name": {
+					"ru": "Мое приложение",
+					"en": "My application"
+				},
+				"author": "AndSmi",
+				"copyright": "THEMEPROF",
+				"reply-to": "developer@andsmi.ru",
+				"google": {
+					"value": "notranslate",
+					"content": "nositelinkssearchbox"
+				},
+				"telegram:channel": "@telegram"
+			}
+		},
+		"link": {
+			"rel": {
+				"stylesheet": "styles.min.css",
+				"canonical": "http://corporate.com",
+				"alternate": {
+					"hreflang": {
+						"ru": "http://ru.corporate.com",
+						"en": "http://en.corporate.com"
+					}
+				}
+			}
+		},
+		"base": "/",
+		"lang": "ru",
+		"scripts": [
+			{
+				"type": "module",
+				"name": "libs"
+			},
+			{
+				"type": "application/javascript",
+				"name": "app"
+			}
+		]
+	},
+	"modal": {
+		"title": "Close modal",
+		"ariaLabel": "Close modal"
+	},
 	"address": [
 		{
 			"urlTitle": "Свяжитесь с нами по телефону",
@@ -197,23 +252,23 @@
 		{
 			"title": "Перейти на карту сайта",
 			"text": "Карта сайта",
-			"url": "/sitemap"
+			"url": "sitemap"
 		},
 		{
 			"title": "Перейти на правила",
 			"text": "Правила",
-			"url": "/terms"
+			"url": "terms"
 		},
 		{
 			"title": "Перейти на страницу «Наша команда»",
 			"text": "Наша команда",
-			"url": "/our-team"
+			"url": "our-team"
 		}
 	],
 	"logo": {
 		"picName": "logo",
 		"picAlt": "Логотип корпоративного сайта",
-		"url": "/",
+		"url": "",
 		"urlTitle": "Перейти на главную"
 	},
 	"menu": {
@@ -221,27 +276,27 @@
 		"items": [
 			{
 				"title": "Главная",
-				"url": "/",
+				"url": "",
 				"urlTitle": "Перейти на страницу «Главная»"
 			},
 			{
 				"title": "Услуги",
-				"url": "/services",
+				"url": "services",
 				"urlTitle": "Перейти на страницу «Услуги»"
 			},
 			{
 				"title": "О компании",
-				"url": "/about",
+				"url": "about",
 				"urlTitle": "Перейти на страницу «О компании»"
 			},
 			{
 				"title": "Новости",
-				"url": "/news",
+				"url": "news",
 				"urlTitle": "Перейти на страницу «Новости»"
 			},
 			{
 				"title": "Контакты",
-				"url": "/contacts",
+				"url": "contacts",
 				"urlTitle": "Перейти на страницу «Контакты»"
 			}
 		]
@@ -286,7 +341,7 @@
 		],
 		"url": {
 			"text": "Больше новостей",
-			"link": "/news"
+			"link": "news"
 		}
 	},
 	"phone": {
@@ -307,7 +362,7 @@
 		{
 			"icon": "geo",
 			"url": {
-				"link": "/contacts",
+				"link": "contacts",
 				"title": "Открыть страницу с контактами"
 			}
 		},
@@ -322,7 +377,7 @@
 		{
 			"icon": "people",
 			"url": {
-				"link": "/our-team",
+				"link": "our-team",
 				"title": "Открыть страницу с нашей командой"
 			}
 		}
@@ -357,60 +412,5 @@
 		"title": "Подписаться",
 		"placeholder": "Ваша почта",
 		"btnText": "Отправить"
-	},
-	"templateSettings": {
-		"meta": {
-			"http-equiv": {
-				"Content-Type": "text/html; charset=utf-8",
-				"Content-Language": "ru",
-				"Cache-Control": "no-cache",
-				"expires": "0"
-			},
-			"name": {
-				"viewport": "width=device-width",
-				"document-state": "dynamic",
-				"robots": "index, follow",
-				"application-name": {
-					"ru": "Мое приложение",
-					"en": "My application"
-				},
-				"author": "AndSmi",
-				"copyright": "THEMEPROF",
-				"reply-to": "developer@andsmi.ru",
-				"google": {
-					"value": "notranslate",
-					"content": "nositelinkssearchbox"
-				},
-				"telegram:channel": "@telegram"
-			}
-		},
-		"link": {
-			"rel": {
-				"stylesheet": "styles.min.css",
-				"canonical": "http://corporate.com",
-				"alternate": {
-					"hreflang": {
-						"ru": "http://ru.corporate.com",
-						"en": "http://en.corporate.com"
-					}
-				}
-			}
-		},
-		"base": "/",
-		"lang": "ru",
-		"scripts": [
-			{
-				"type": "module",
-				"name": "libs"
-			},
-			{
-				"type": "application/javascript",
-				"name": "app"
-			}
-		]
-	},
-	"modal": {
-		"title": "Close modal",
-		"ariaLabel": "Close modal"
 	}
 }

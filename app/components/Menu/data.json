@@ -4,27 +4,27 @@
     "items": [
       {
         "title": "Главная",
-        "url": "/",
+        "url": "",
         "urlTitle": "Перейти на страницу «Главная»"
       },
       {
         "title": "Услуги",
-        "url": "/services",
+        "url": "services",
         "urlTitle": "Перейти на страницу «Услуги»"
       },
       {
         "title": "О компании",
-        "url": "/about",
+        "url": "about",
         "urlTitle": "Перейти на страницу «О компании»"
       },
       {
         "title": "Новости",
-        "url": "/news",
+        "url": "news",
         "urlTitle": "Перейти на страницу «Новости»"
       },
       {
         "title": "Контакты",
-        "url": "/contacts",
+        "url": "contacts",
         "urlTitle": "Перейти на страницу «Контакты»"
       }
     ]
