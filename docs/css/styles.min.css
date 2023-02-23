@@ -3522,10 +3522,6 @@ footer {
   max-width: 10.3125em;
 }
 
-.page__footer {
-  margin-top: 5em;
-}
-
 .page__arrow-up {
   position: fixed;
   right: 7.5em;
@@ -3613,6 +3609,10 @@ footer {
 .home__cta,
 .home__news {
   margin-top: 5em;
+}
+
+.home__news {
+  margin-bottom: 5em;
 }
 
 .cta {
@@ -4803,10 +4803,6 @@ footer {
     max-width: 11.25em;
   }
 
-  .page__footer {
-    margin-top: 2.8125em;
-  }
-
   .page__arrow-up {
     width: 2.8125em;
     height: 2.8125em;
@@ -4857,6 +4853,10 @@ footer {
   .home__cta,
   .home__news {
     margin-top: 1.875em;
+  }
+
+  .home__news {
+    margin-bottom: 2.8125em;
   }
 
   .cta {
