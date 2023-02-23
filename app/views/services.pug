@@ -1,6 +1,7 @@
 extends ../layout/base/layout
 
 include ../components/CTA/template
+include ../components/Breadcrumbs/template
 
 block metaSeo
   title= pages.services.title
@@ -10,4 +11,5 @@ block metaSeo
 
 block content
   .services
+    +Breadcrumbs('', 'services')
     +CTA

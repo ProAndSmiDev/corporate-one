@@ -83,6 +83,23 @@
 			}
 		]
 	},
+	"breadcrumbs": {
+		"services": {
+			"title": "Услуги",
+			"items": [
+				{
+					"url": "",
+					"title": "Вернуться на главную",
+					"text": "Главная",
+					"isActive": true
+				},
+				{
+					"text": "Услуги",
+					"isActive": false
+				}
+			]
+		}
+	},
 	"cardDefault": {
 		"title": "Заголовок",
 		"createdBy": "31.12.9999",
@@ -135,7 +152,6 @@
 			}
 		]
 	},
-	"componentName": {},
 	"copyright": "&copy; Ваш бизнес. Все права защищены 2023",
 	"counters": {
 		"info": {
@@ -252,7 +268,6 @@
 			}
 		]
 	},
-	"modalComponentName": {},
 	"news": {
 		"title": "Последние новости",
 		"items": [
