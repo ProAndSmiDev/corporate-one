@@ -1,0 +1,30 @@
+mixin getMeta(type, name, content)
+  if type === 'http-equiv'
+    meta(http-equiv=name content=content)
+  else
+    if name === 'application-name'
+      for val, lang in content
+        meta(name=name, lang=lang content=val)
+    else if name === 'google'
+      meta(name=name value=content.value content=content.content)
+    else
+      meta(name=name content=content)
+
+mixin getLink(rel, content)
+  if rel === 'alternate'
+    for domain, lang in content.hreflang
+      link(rel=rel hreflang=lang href=domain)
+  else if rel === 'stylesheet'
+    link(rel=rel href=`css/${content}`)
+  else if rel === 'canonical'
+    link(rel=rel href=content)
+
+mixin getScripts(fileName, type)
+  script(src=`js/${fileName}.min.js` type=type)
+
+mixin Modal(type)
+  .modal(class=`${(type) ? 'modal-' + type + ' modal__' + type : ''}`)
+    button.modal-close.modal__close(aria-label=modal.ariaLabel title=modal.title)
+
+    .modal__content
+      block

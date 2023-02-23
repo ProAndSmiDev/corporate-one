@@ -1,0 +1,28 @@
+{
+  "socials": [
+    {
+      "icon": "fb",
+      "link": "https://facebook.com",
+      "title": "Мы в фейсбуке",
+      "isFooter": true
+    },
+    {
+      "icon": "in",
+      "link": "https://in.com",
+      "title": "Мы в инсте",
+      "isFooter": true
+    },
+    {
+      "icon": "tw",
+      "link": "https://tw.com",
+      "title": "Мы в твиттере",
+      "isFooter": true
+    },
+    {
+      "icon": "google",
+      "link": "https://google.com",
+      "title": "Мы в Google",
+      "isFooter": true
+    }
+  ]
+}

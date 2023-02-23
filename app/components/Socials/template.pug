@@ -1,0 +1,10 @@
+mixin Socials(parent, place)
+  - parent = (parent) ? parent : 'page';
+
+  ul.socials(class=`${parent}__socials`)
+    for item in socials
+      if place === 'footer' && item.isFooter
+        li.socials__item
+          a.socials__link(href=item.link title=item.title target="_blank")
+            svg.socials__icon
+              use(href=`img/sprite.svg#${item.icon}`)

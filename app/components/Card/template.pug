@@ -1,0 +1,27 @@
+mixin Card(parent, content, type)
+  - type = type ? type : 'default';
+  - parent = parent ? parent : 'home';
+  - content = content ? content : cardDefault;
+
+  article.card(class=`${parent}__card`)
+    picture.card__pic
+      source(srcset=`img/${type}/promo/${content.pic.name}.webp` type='image/webp')
+      img.card__img(src=`img/${type}/promo/${content.pic.name}.jpg` alt=content.pic.alt)
+
+    .card__wrapper
+      header.card__header
+        h3.card-title
+          span.card-title__text= content.title
+
+        if content.createdBy
+          p.card-created.news-card__created
+            span.card-created__text= content.createdBy
+
+      .card__body
+        p.card-promo
+          span.card-promo__text= content.promo
+
+      if content.urlPath
+        footer.card__footer
+          a.card-link(href=`news/${content.urlPath}`)
+            span.card-link__text Узнать больше

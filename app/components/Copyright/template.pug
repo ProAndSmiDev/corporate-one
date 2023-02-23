@@ -1,0 +1,5 @@
+mixin Copyright(parent)
+  - parent = (parent) ? parent : 'page';
+
+  p.copyright(class=`${parent}__copyright`)
+    span.copyright__text!= copyright

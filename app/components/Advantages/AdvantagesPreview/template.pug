@@ -1,0 +1,9 @@
+include ../../Card/template
+
+mixin AdvantagesPreview(parent, content)
+  - parent = parent ? parent : 'advantages';
+
+  ul.advantages-preview(class=`${parent}__preview`)
+    for item in content
+      li.advantages-preview__item
+        +Card('advantages-preview', item, 'advantages')

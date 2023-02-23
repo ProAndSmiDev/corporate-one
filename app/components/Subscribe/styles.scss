@@ -1,0 +1,49 @@
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title {
+    $fz: 24;
+    color: $primary;
+    font-size: em($fz, $fz_base);
+    font-weight: 500;
+
+    @media(max-width: $pc) {
+      text-align: center;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    margin-top: em(25, $fz);
+  }
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__field {
+    $fz: 18;
+    width: 100%;
+
+    padding: em(20 25, $fz);
+    border-radius: em(5, $fz);
+    background-color: $primary;
+    color: $secondary;
+    font-size: em($fz, $fz_base);
+    font-weight: 300;
+
+    @media(max-width: $pc) {
+      padding: em(15, $fz);
+    }
+  }
+
+  &__button {
+    width: 100%;
+    margin-top: em(10, $fz);
+  }
+}

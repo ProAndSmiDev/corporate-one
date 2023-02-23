@@ -4,4 +4,4 @@ node_modules
 yarn.lock
 yarn-error.log
 *.zip
-app/assets/data.json
+app/assets/data
