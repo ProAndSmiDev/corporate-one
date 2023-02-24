@@ -10,6 +10,7 @@
           "isActive" : true
         },
         {
+          "url": "#",
           "text" : "Услуги",
           "isActive" : false
         }
