@@ -4442,7 +4442,7 @@ footer {
 }
 
 .breadcrumbs--in-services {
-  background: hsl(216, 15%, 20%) url("../img/services/bg.jpg") fixed 50% 0%/auto no-repeat;
+  background: hsl(216, 15%, 20%) url("../img/services/bg.jpg") fixed 50% 5%/auto no-repeat;
 }
 
 .breadcrumbs__wrapper {
