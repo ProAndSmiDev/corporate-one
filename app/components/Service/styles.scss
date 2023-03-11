@@ -1,0 +1,99 @@
+.service {
+  $self: &;
+  --service-text-color: #{$primary};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: em(20 40, $fz);
+  color: var(--service-text-color);
+
+  &:hover {
+    &::before {
+      background-color: $theme;
+      transform: rotate(0);
+    }
+
+    #{$self} {
+      &__info,
+      &__more {
+        visibility: visible;
+        opacity: 1;
+        transform: rotate(0);
+      }
+    }
+  }
+
+  &__bg {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparentize($secondary, 0.8);
+      transform: rotate(180deg);
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+    }
+  }
+
+  &__title,
+  &__info,
+  &__more {
+    margin-top: em(30, $fz);
+  }
+
+  &__info,
+  &__more {
+    visibility: hidden;
+    opacity: 0;
+    transform: rotate(180deg);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  &__info {
+    text-align: center;
+  }
+
+  &__more {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+
+      content: "";
+      background-color: var(--service-text-color);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+      &::before {
+        transform: scale(0);
+      }
+    }
+  }
+}
+
+.service-title {
+  &__text {
+    $fz: 30;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: em($fz, $fz_base);
+  }
+}
+
+.service-more {
+  &__text {
+    $fz: 18;
+    font-size: em($fz, $fz_base);
+  }
+}

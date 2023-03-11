@@ -1,0 +1,33 @@
+mixin Service(parent, data)
+  - parent = parent ? parent : 'services';
+  -
+    data = data ? data : {
+      name: 'Название услуги',
+      icon: '',
+      info: 'Это описание услуги, которое вы сюда впишете',
+      url: {
+        title: 'Перейти на страницу услуги',
+        link: '#',
+      },
+      pic: {
+        name: '',
+        alt: 'Фото услуги',
+      },
+    }
+
+  article.service(class=`${parent}__service`)
+    picture.service__bg
+      source(srcset=`/img/services/${data.pic.name}.webp` type='image/webp')
+
+      img(src=`/img/services/${data.pic.name}.jpg` alt=data.pic.alt)
+
+    svg.service__icon
+      use(href=`/img/sprite.svg#${data.icon}`)
+
+    h2.service-title.service__title
+      span.service-title__text= data.name
+
+    p.service__info= data.info
+
+    a.service-more.service__more(href=data.url.link title=data.url.title)
+      span.service-more__text Подробнее

@@ -4294,6 +4294,123 @@ footer {
   --arrow-up-text-color: #d9d9d9;
 }
 
+.service {
+  --service-text-color: hsl(0, 0%, 95%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1.25em 2.5em;
+  color: var(--service-text-color);
+}
+
+.service:hover::before {
+  background-color: hsl(217, 84%, 55%);
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.service:hover .service__info,
+.service:hover .service__more {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.service__bg {
+  position: relative;
+}
+
+.service__bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 49, 59, 0.2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.service__title,
+.service__info,
+.service__more {
+  margin-top: 1.875em;
+}
+
+.service__info,
+.service__more {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.service__info {
+  text-align: center;
+}
+
+.service__more {
+  position: relative;
+}
+
+.service__more::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background-color: var(--service-text-color);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.service__more:hover::before {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.service-title__text {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.875em;
+}
+
+.service-more__text {
+  font-size: 1.125em;
+}
+
 .counters {
   padding-top: 4.0625em;
   padding-bottom: 4.0625em;
