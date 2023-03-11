@@ -1,7 +1,8 @@
 @import "app/layout/base/styles";
 
 //- Components' styles
-@import "app/views/styles",
+@import
+  "app/views/styles",
   "app/components/CTA/styles",
   "app/components/News/styles",
   "app/components/Logo/styles",
@@ -14,13 +15,14 @@
   "app/components/Clients/styles",
   "app/components/Sidebar/styles",
   "app/components/ArrowUp/styles",
+  "app/components/Service/styles",
   "app/components/Counters/styles",
   "app/components/Subscribe/styles",
   "app/components/Copyright/styles",
   "app/components/FooterMenu/styles",
   "app/components/Advantages/styles",
+  "app/components/Breadcrumbs/styles",
   "app/components/FirstScreen/styles",
-  "app/components/ComponentName/styles",
   "app/components/Sidebar/SidebarIcon/styles",
   "app/components/Counters/CountersInfo/styles",
   "app/components/Counters/CountersList/styles",
@@ -29,4 +31,4 @@
   "app/components/Advantages/AdvantagesPreview/styles";
 
 //- Modals' styles
-@import "app/components/ModalComponentName/styles";
+

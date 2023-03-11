@@ -10,7 +10,7 @@
 
   &__counters {
     margin-top: em(65, $fz);
-    
+
     @media(max-width: $md) {
       margin-top: em(25, $fz);
     }
@@ -21,9 +21,17 @@
   &__cta,
   &__news {
     margin-top: em(80, $fz);
-    
+
     @media(max-width: $pc) {
       margin-top: em(30, $fz);
+    }
+  }
+
+  &__news {
+    margin-bottom: em(80, $fz);
+
+    @media(max-width: $pc) {
+      margin-bottom: em(45, $fz);
     }
   }
 }

@@ -1,0 +1,17 @@
+mixin Breadcrumbs(parent, page)
+  - page = page ? page : 'services';
+  - parent = parent ? parent : 'services';
+  - breadcrumbsClasses = `breadcrumbs--in-${page}`;
+  - getBreadcrumbsLinkDIsabledRel = (linkState) => linkState ? 'nofollow, noindex' : 'follow, index';
+  - getBreadcrumbsLinkDisabledClass = (linkState) => linkState ? 'breadcrumbs-link--is-disabled' : '';
+
+  section.breadcrumbs(class=breadcrumbsClasses)
+    .breadcrumbs__wrapper.u-wrapper
+      h2.breadcrumbs-title
+        span.breadcrumbs-title__text= breadcrumbs[page].title
+
+      ul.breadcrumbs-list.breadcrumbs__list
+        for link in breadcrumbs[page].items
+          li.breadcrumbs-list__item
+            a.breadcrumbs-link(class=getBreadcrumbsLinkDisabledClass(!link.isActive) href=link.url title=link.title rel=getBreadcrumbsLinkDIsabledRel(!link.isActive))
+              span.breadcrumbs-link__text= link.text

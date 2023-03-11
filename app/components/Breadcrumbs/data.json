@@ -1,0 +1,20 @@
+{
+  "breadcrumbs": {
+    "services" : {
+      "title" : "Услуги",
+      "items" : [
+        {
+          "url" : "",
+          "title" : "Вернуться на главную",
+          "text" : "Главная",
+          "isActive" : true
+        },
+        {
+          "url": "#",
+          "text" : "Услуги",
+          "isActive" : false
+        }
+      ]
+    }
+  }
+}

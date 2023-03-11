@@ -1,0 +1,15 @@
+extends ../layout/base/layout
+
+include ../components/CTA/template
+include ../components/Breadcrumbs/template
+
+block metaSeo
+  title= pages.services.title
+
+  for content, name in pages.services.meta
+    +getMeta('', name, content)
+
+block content
+  .services
+    +Breadcrumbs('', 'services')
+    +CTA

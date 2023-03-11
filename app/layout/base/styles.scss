@@ -64,14 +64,6 @@
     }
   }
 
-  &__footer {
-    margin-top: em(80, $fz);
-
-    @media(max-width: $pc) {
-      margin-top: em(45, $fz);
-    }
-  }
-
   &__arrow-up {
     position: fixed;
     right: em(120, $fz);
@@ -185,5 +177,3 @@
     }
   }
 }
-
-.modal {}
